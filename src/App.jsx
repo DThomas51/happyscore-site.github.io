@@ -20,7 +20,7 @@ function App() {
   const toggleTheme = () => setTheme((prev) => (prev === 'light' ? 'dark' : 'light'))
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/happyscore-site.github.io">
       <AppRouter theme={theme} onToggleTheme={toggleTheme} />
     </BrowserRouter>
   )
